@@ -10,7 +10,7 @@ import matplotlib
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 
-matplotlib.use("Tkagg")
+matplotlib.use("TkAgg")
 
 # 定义待优化函数
 def f(x):
