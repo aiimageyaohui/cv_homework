@@ -1,0 +1,4 @@
+1、featuremap_receptivefield_with_hook.py中分别包含计算特征图大小和感受野大小的hook方法，使用时将这两个hook方法挂载到模型上即可得到每层的featuremap_size和receptive_field_size
+2、generate_anchors.py文件中包含两个函数分别是：def generateAnchors(size_base=16, scales=2 ** np.arange(3, 6), ratios=[0.5, 1, 2])和def generateTotalAnchors(batch_size,fg_probs,feature_width,feature_height,feature_stride,anchor_scales,anchor_ratios)
+其中generateAnchors（）负责对一个锚点生成9个anchor，generateTotalAnchors负责生成一个batch中的所有anchor
+3、roi_pooling.py文件中包含roi_pooling的forward和backward所有过程
